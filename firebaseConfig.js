@@ -2,8 +2,10 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"; // Corrected import
 
+const api = process.env.API_KEY
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDwKiEqSM6kEn4MvmBNhpNq79RQmubD_mI",
+    apiKey: api,
     authDomain: "testingadmin-382b3.firebaseapp.com",
     databaseURL: "https://testingadmin-382b3-default-rtdb.firebaseio.com",
     projectId: "testingadmin-382b3",
